@@ -24,7 +24,7 @@ export const createPost = (post) => async (dispatch) => {
 
     } catch (error) {
         
-        console.log(`error is from here: ${error.message}`)
+        console.log(`error is from here: ${error}`)
 
     }
 }
@@ -37,7 +37,7 @@ export const updatePost = ( id , post ) => async (dispatch) => {
          dispatch({ type: 'UPDATE' , payload: data })
 
     } catch(e) {
-        console.log(e.message)
+        console.log(e)
     }
 }
 
